@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
 	public GameObject bulletPrefab;
 	public Transform bulletSpawn;
+	public Camera cam;
 
 	void Start(){
 		enabled = true;
