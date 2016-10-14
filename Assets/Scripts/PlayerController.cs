@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 		transform.Rotate(0, x, 0);
 		transform.Translate(0, 0, z);
 
-		if (Input.GetKey(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			CmdFire();
 		}
