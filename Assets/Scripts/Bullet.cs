@@ -3,18 +3,16 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 
-
+	public int damage = 1;
 
 	void OnCollisionEnter(Collision collision){
 		if (collision.gameObject.tag == "Bullet")
 			return;
-		var hit = collision.gameObject;
-		var health = hit.GetComponent<ZombieHealth>();
-		if (health  != null)
-		{
-			health.TakeDamage(5);
-		}
-
+		Debug.LogError ("The damage of the bullet is: " + damage);
 		Destroy(gameObject);
+	}
+
+	public void setDamage(int d){
+		this.damage = d;
 	}
 }
