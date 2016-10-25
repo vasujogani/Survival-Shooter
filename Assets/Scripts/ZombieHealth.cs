@@ -15,6 +15,7 @@ public class ZombieHealth : MonoBehaviour {
 		{
 			currentHealth = 0;
 			Debug.Log("Dead!");
+			gameObject.GetComponent<AISpawn> ().removeMe ();
 			Destroy (gameObject);
 		}
 
