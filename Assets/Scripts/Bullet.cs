@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour {
 		var health = hit.GetComponent<ZombieHealth>();
 		if (health  != null)
 		{
-			health.TakeDamage(5);
+			health.TakeDamage(50);
 		}
 
 		Destroy(gameObject);
